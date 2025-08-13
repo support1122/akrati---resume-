@@ -1,6 +1,5 @@
 "use client"
 import React, { useState } from 'react'
-import { Menu, X } from 'lucide-react'
 
 const Navbar = () => {
     const menuItems = [
@@ -63,7 +62,7 @@ const Navbar = () => {
                 className="lg:hidden flex items-center justify-center w-10 h-10 rounded-full bg-[#FD853A] hover:bg-[#e67a2e] transition-colors"
                 onClick={toggleMobileMenu}
             >
-                {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
+                {isMobileMenuOpen ? <span className="text-white text-xl">×</span> : <span className="text-white text-xl">☰</span>}
             </button>
 
             {/* Mobile Menu Overlay */}
